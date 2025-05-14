@@ -11,6 +11,9 @@ Netwerk:
 •	Beide containers zitten in een custom bridge netwerk app-network.
 Poorten:
 •	Externe poorten 80 en 443 worden gemapt naar de Nginx container.
+
+![image](https://github.com/user-attachments/assets/93a63564-d96a-4747-87ef-8302e53214f6)
+
 ________________________________________
 **Opdracht 2**
 Doel: Reverse proxy met een frontend (web) en een backend service, beide met healthchecks.

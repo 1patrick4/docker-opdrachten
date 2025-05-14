@@ -1,0 +1,38 @@
+name: CI Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      COMPOSE_FILE: docker-compose.yml
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Load .env variables
+        run: cp .env .env.local
+
+      - name: Lint Docker Compose file
+        run: docker-compose config -q
+
+      - name: Build all services
+        run: docker-compose build
+
+      - name: Run containers
+        run: docker-compose up -d
+
+      - name: Test web service health
+        run: |
+          sleep 10
+          curl -f http://localhost/ || exit 1
+
+      - name: Test backend health
+        run: curl -f http://localhost/api/health || exit 1
+
+      - name: Shutdown
+        run: docker-compose down

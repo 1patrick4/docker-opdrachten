@@ -20,7 +20,7 @@ De reverse proxy is geconfigureerd via een Nginx-configuratiebestand (`default.c
 Het configuratiebestand maakt gebruik van de standaard Nginx-functionaliteit voor load balancingen request forwarding.
 
 Een voorbeeld van de reverse proxy configuratie in `default.conf`:
-```nginx
+nginx
 server {
     listen 80;
 

@@ -21,19 +21,17 @@ Het configuratiebestand maakt gebruik van de standaard Nginx-functionaliteit voo
 
 Een voorbeeld van de reverse proxy configuratie in `default.conf`:
 
-
-nginx
-server {
-    listen 80;
-
-    location / {
-        proxy_pass http://web:80;
+    server {
+        listen 80;
+    
+        location / {
+            proxy_pass http://web:80;
+        }
+    
+        location /api {
+            proxy_pass http://backend:5000;
+        }
     }
-
-    location /api {
-        proxy_pass http://backend:5000;
-    }
-}
 
 ## Security and Test Plans
 

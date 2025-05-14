@@ -49,6 +49,8 @@ server {
   - Test: `curl http://localhost/`
   - Als de webservice niet reageert, wordt de container opnieuw opgestart.
 
+
+
 **Opdracht 1**
 Doel: Simpele reverse proxy setup tussen Nginx en een webservice.
 Structuur:

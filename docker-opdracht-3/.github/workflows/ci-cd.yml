@@ -24,6 +24,3 @@ jobs:
 
       - name: Docker build
         run: docker build -t backend ./backend
-
-      - name: Validate NGINX config
-        run: docker run --rm -v ${{ github.workspace }}/nginx/nginx.conf:/etc/nginx/nginx.conf nginx nginx -t

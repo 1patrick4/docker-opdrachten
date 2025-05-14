@@ -1,6 +1,7 @@
-Future Skills Assignment – DevOps Engineer (Modernisation)
+*Future Skills Assignment – DevOps Engineer (Modernisation)*
 Uitwerking van de future skills assignment
-Opdracht 1
+
+**Opdracht 1**
 Doel: Simpele reverse proxy setup tussen Nginx en een webservice.
 Structuur:
 •	reverse-proxy: maakt een Nginx-image uit ./nginx.
@@ -10,7 +11,7 @@ Netwerk:
 Poorten:
 •	Externe poorten 80 en 443 worden gemapt naar de Nginx container.
 ________________________________________
-Opdracht 2
+**Opdracht 2**
 Doel: Reverse proxy met een frontend (web) en een backend service, beide met healthchecks.
 Structuur:
 •	web: Frontend container met healthcheck op /.
@@ -20,7 +21,7 @@ Omgevingsvariabelen:
 •	DEBUG voor de backend.
 •	WEB_PORT voor poortmapping van de proxy.
 ________________________________________
-Opdracht 3
+**Opdracht 3**
 Doel: Monitoringstack met twee backend containers, reverse proxy, en observability tools (Grafana + Loki + Promtail).
 Structuur:
 •	backend1 & backend2: Twee identieke backends voor load balancing.

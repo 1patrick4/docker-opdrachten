@@ -41,6 +41,9 @@ Poorten:
 •	Loki: 3100
 •	Grafana: 3000
 
+![image](https://github.com/user-attachments/assets/82ec6475-0843-40ab-a5ae-8bfb09b6949b)
+
+
 Gebruik
 Alle projecten heb ik in studio code gezet met de docker plugin. Je kan dan gewoon rechtsklikken op de docker compose file en builden. Zelf deed ik visio vanuit een wsl gebruiken. Dan stonden de containers meteen op mijn wsl.
 

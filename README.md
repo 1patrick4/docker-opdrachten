@@ -21,6 +21,9 @@ Structuur:
 Omgevingsvariabelen:
 •	DEBUG voor de backend.
 •	WEB_PORT voor poortmapping van de proxy.
+
+![image](https://github.com/user-attachments/assets/c2a5fd9d-6238-4765-9cb9-c0ea21c5bb52)
+
 ________________________________________
 **Opdracht 3**
 Doel: Monitoringstack met twee backend containers, reverse proxy, en observability tools (Grafana + Loki + Promtail).

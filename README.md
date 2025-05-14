@@ -51,7 +51,7 @@ Een voorbeeld van de reverse proxy configuratie in `default.conf`:
 
 
 
-**Opdracht 1**
+## Opdracht 1
 Doel: Simpele reverse proxy setup tussen Nginx en een webservice.
 Structuur:
 •	reverse-proxy: maakt een Nginx-image uit ./nginx.
@@ -63,8 +63,8 @@ Poorten:
 
 ![image](https://github.com/user-attachments/assets/93a63564-d96a-4747-87ef-8302e53214f6)
 
-________________________________________
-**Opdracht 2**
+
+## Opdracht 2
 Doel: Reverse proxy met een frontend (web) en een backend service, beide met healthchecks.
 Structuur:
 •	web: Frontend container met healthcheck op /.
@@ -76,8 +76,8 @@ Omgevingsvariabelen:
 
 ![image](https://github.com/user-attachments/assets/c2a5fd9d-6238-4765-9cb9-c0ea21c5bb52)
 
-________________________________________
-**Opdracht 3**
+
+## Opdracht 3
 Doel: Monitoringstack met twee backend containers, reverse proxy, en observability tools (Grafana + Loki + Promtail).
 Structuur:
 •	backend1 & backend2: Twee identieke backends voor load balancing.
